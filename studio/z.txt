@@ -1,0 +1,11 @@
+"@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+
+
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
