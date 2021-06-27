@@ -10,32 +10,30 @@ export default function Footer() {
             Arabuluculuk ile ilgili bilgiler bulabileceğiniz bir blog.
           </h3>
           <div className="flex flex-row justify-center items-center lg:pl-4 lg:w-1/2 lg:space-x-5">
-              <div>
+            <div>
                 <SocialIcon
               url="https://twitter.com/avsarcoteli"
               className="mr-4"
               target="_blank"
               style={{ height: 35, width: 35 }}
             />
-                </div>
-
-                <div>
+            </div>
+            <div>
                 <SocialIcon
               url="https://www.youtube.com/channel/UCH5qLtQJercl1tURGPNCiHg"
               className="mr-4"
               target="_blank"
               style={{ height: 35, width: 35 }}
             />
-                </div>
-                <div>
+            </div>
+            <div>
                 <SocialIcon
               url="https://www.linkedin.com/in/avsarcoteli/"
               className="mr-4"
               target="_blank"
               style={{ height: 35, width: 35 }}
             />
-                </div>
-            
+            </div>            
           </div>
         </div>
       </Container>
