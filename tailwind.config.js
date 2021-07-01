@@ -1,5 +1,4 @@
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -23,24 +22,6 @@ module.exports = {
         "6xl": "2.75rem",
         "7xl": "4.5rem",
         "8xl": "6.25rem",
-      },
-      fontFamily: {
-        sans: [
-          '"Inter"',
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          '"Segoe UI"',
-          "Roboto",
-          '"Helvetica Neue"',
-          "Arial",
-          '"Noto Sans"',
-          "sans-serif",
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ],
       },
       boxShadow: {
         small: "0 5px 10px rgba(0, 0, 0, 0.12)",

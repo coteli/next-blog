@@ -20,7 +20,7 @@ export default function Header() {
             <Link href="/">
               <a className="hover:underline">Hakkımızda</a>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <a className="hover:underline">İletişim</a>
             </Link>
           </div>

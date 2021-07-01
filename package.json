@@ -8,12 +8,15 @@
   },
   "dependencies": {
     "@sanity/block-content-to-react": "2.0.7",
+    "axios": "^0.21.1",
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
     "next": "latest",
     "next-sanity": "0.1.5",
-    "react": "^16.13.0",
+    "nodemailer": "^6.6.2",
+    "react": "^17.0.1",
     "react-dom": "^16.13.0",
+    "react-hook-form": "^7.9.0",
     "react-social-icons": "^5.5.0"
   },
   "devDependencies": {
