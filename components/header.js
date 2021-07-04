@@ -12,7 +12,7 @@ export default function Header() {
           </h2>
         </div>
         <div>
-          <div className="text-xl md:text-2xl space-x-3 ml-auto">
+          <div className="text-md md:text-2xl space-x-3 ml-auto">
             <Link href="/">
               <a className="hover:underline">Ana Sayfa</a>
             </Link>
