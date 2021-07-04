@@ -30,7 +30,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-4xl rounded-md p-8 shadow">
+    <div className="mx-auto w-full max-w-4xl border border-gray-300 rounded-md p-8 shadow">
       <form
         onSubmit={handleSubmit(onSubmitForm)}
         className="grid grid-cols-1 gap-y-6"
@@ -41,8 +41,8 @@ export default function ContactForm() {
           </label>
           <input
             type="text"
-            {...register("name", { required: true, maxLength: 30 })}
-            className="block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2"
+            {...register("name", { required: true })}
+            className="block w-full shadow py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md outline-none"
             placeholder="İsim Soyisim"
           />
           {errors.name?.type === "required" && " İsim Soyisim girilmelidir"}
@@ -56,7 +56,7 @@ export default function ContactForm() {
             {...register("email", {
               required: true,
             })}
-            className="block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2"
+            className="block w-full shadow py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md outline-none"
             placeholder="Email"
           />
           {errors.email && " Email adresi girilmelidir"}
@@ -68,7 +68,7 @@ export default function ContactForm() {
           <input
             type="text"
             {...register("phone")}
-            className="block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2"
+            className="block w-full shadow py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md outline-none"
             placeholder="Telefon"
           />
         </div>
@@ -80,7 +80,7 @@ export default function ContactForm() {
             name="message"
             rows="4"
             {...register("message", { required: true, maxLength: 1000 })}
-            className="block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2"
+            className="block w-full shadow py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md outline-none"
             placeholder="Mesaj"
           />
           {errors.email && " Mesaj girilmelidir"}
@@ -88,7 +88,7 @@ export default function ContactForm() {
         <div>
           <button
             type="submit"
-            className="inline-flex justify-center py-3 px-6 border border-transparent shadow text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            className="inline-flex justify-center py-3 px-6 shadow text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
           >
             Gönder
           </button>
