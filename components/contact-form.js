@@ -30,7 +30,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-4xl border border-gray-300 rounded-md p-8 shadow">
+    <div className="mx-auto w-full max-w-4xl border border-gray-300 rounded-md p-8 shadow-small">
       <form
         onSubmit={handleSubmit(onSubmitForm)}
         className="grid grid-cols-1 gap-y-6"
@@ -42,10 +42,10 @@ export default function ContactForm() {
           <input
             type="text"
             {...register("name", { required: true })}
-            className="block w-full shadow py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md outline-none"
+            className="block w-full py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none"
             placeholder="İsim Soyisim"
           />
-          {errors.name?.type === "required" && " İsim Soyisim girilmelidir"}
+          {errors.name?.type === "required" && " İsim Soyisim girilmelidir!"}
         </div>
         <div>
           <label htmlFor="email" className="sr-only">
@@ -56,10 +56,10 @@ export default function ContactForm() {
             {...register("email", {
               required: true,
             })}
-            className="block w-full shadow py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md outline-none"
+            className="block w-full py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none"
             placeholder="Email"
           />
-          {errors.email && " Email adresi girilmelidir"}
+          {errors.email && " Email adresi girilmelidir!"}
         </div>
         <div>
           <label htmlFor="phone" className="sr-only">
@@ -68,7 +68,7 @@ export default function ContactForm() {
           <input
             type="text"
             {...register("phone")}
-            className="block w-full shadow py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md outline-none"
+            className="block w-full py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none"
             placeholder="Telefon"
           />
         </div>
@@ -80,10 +80,10 @@ export default function ContactForm() {
             name="message"
             rows="4"
             {...register("message", { required: true, maxLength: 1000 })}
-            className="block w-full shadow py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md outline-none"
+            className="block w-full py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none"
             placeholder="Mesaj"
           />
-          {errors.email && " Mesaj girilmelidir"}
+          {errors.email && " Mesaj girilmelidir!"}
         </div>
         <div>
           <button
