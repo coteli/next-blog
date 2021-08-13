@@ -7,14 +7,7 @@ export default function Intro() {
         Blog.
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        Arabuluculuk hakkında bilgiler bulabileceğiniz bir Blog!{" "}
-        <a
-          href={BLOG_URL}
-          className="underline hover:text-success duration-200 transition-colors"
-        >
-          {BLOG_NAME}
-        </a>
-        .
+        Arabuluculuk hakkında bilgiler bulabileceğiniz bir Blog!
       </h4>
     </section>
   );

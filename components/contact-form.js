@@ -36,6 +36,17 @@ export default function ContactForm() {
         className="grid grid-cols-1 gap-y-6"
       >
         <div>
+          <label htmlFor="coname" className="sr-only">
+            Company name
+          </label>
+          <input
+            type="text"
+            {...register("coname")}
+            className="block w-full py-3 px-4 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none"
+            placeholder="Firma Unvanı (Kurumsal başvurularda)"
+          />
+        </div>
+        <div>
           <label htmlFor="name" className="sr-only">
             Full name
           </label>
